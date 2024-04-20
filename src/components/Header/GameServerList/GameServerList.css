@@ -1,0 +1,149 @@
+.servers-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #0a0a0a;
+}
+
+.server {
+    display: flex;
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.7);
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.servers-container .server div {
+    display: flex;
+    flex-direction: column;
+}
+
+.servers-container div p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.servers-container .server div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.servers-container .server div div img {
+    max-width: 20px;
+    height: 100%;
+}
+
+.servers-p {
+    font-weight: 100;
+    margin-left: 5px;
+}
+
+.server .right-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.servers-container .test-container .servers-status .server .desktop-status {
+    display: none;
+}
+
+.servers-map {
+    margin-left: 5px;
+}
+
+.servers-status {
+    margin: 0 auto;
+    width: 100%;
+}
+.pc-img {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .server {
+        padding: 5px 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .servers-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .pc-img {
+        display: block;
+        max-width: 200px;
+    }
+
+    .test-container {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .servers-status {
+        margin-top: 30px;
+    }
+
+    .server {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+    }
+
+    .server .right-side {
+        margin-left: 0;
+    }
+
+    .servers-container .test-container .servers-status .server .desktop-status {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 200px;
+    }
+
+    .servers-container .test-container .servers-status .server .desktop-status img {
+        margin-bottom: 10px;
+        margin-left: 5px;
+    }
+
+    .servers-container .test-container .servers-status .server .mobile-status {
+        display: none;
+    }
+
+    .servers-container .test-container .servers-status .server .map-status {
+        flex-direction: column;
+        min-width: 150px;
+    }
+
+    .servers-container .test-container .servers-status .server .map-status .servers-map {
+        max-width: 50px;
+    }
+    .servers-container .test-container .servers-status .server .map-status .servers-p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .server-status-title {
+        display: block;
+        color: #fff;
+        font-size: 13px;
+        width: 180px;
+    }
+
+    .pc-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,52 @@
+.post-content, .post-answers {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ffb800;
+    margin: 20px 10px;
+}
+
+.post-answers {
+    border: 1px solid #505050;
+}
+
+.post-author img {
+    max-width: 70px;
+}
+
+.post-author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.post-author div {
+    margin-left: 10px;
+}
+
+.post-author div p {
+    margin-bottom: 5px;
+}
+
+.author-posts span, .author-rep span {
+    color: #c0c0c0;
+}
+
+.author-rank {
+    color: #ff0000;
+}
+
+.user-authorname {
+    color: silver;
+}
+
+.post-desc {
+    margin-bottom: 10px;
+    font-size: 13px
+}
+

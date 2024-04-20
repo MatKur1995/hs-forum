@@ -1,0 +1,102 @@
+.forum-stats {
+    margin: 10px;
+    color: #fff;
+    background-color: #161616;
+}
+
+.left-panel-stats .left-panel-title, .right-panel-stats .left-panel-title {
+    display: flex;
+    align-items: center;
+}
+
+.left-panel-title {
+    padding-top: 15px;
+}
+
+.left-panel-stats .left-panel-title img, .right-panel-stats .left-panel-title img {
+    margin-left: 10px;
+}
+
+.left-panel-stats .left-panel-title p, .right-panel-stats .left-panel-title p {
+    margin-left: 10px;
+}
+
+.user-stats-activity {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.user-stats-activity p {
+    margin-bottom: 10px;
+}
+
+.span-users, .registered-users, .logged-today {
+    color: #ffb800;
+}
+
+.users-online div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.users-online div .registered-users, .logged-today {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.users-online {
+    padding: 10px;
+}
+
+.users-online div div {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.users-online div div p {
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.logged-users-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.logged-users-container div {
+    flex-wrap: wrap;
+}
+
+.registered-users-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+    .forum-stats {
+        display: flex;
+    }
+
+    .left-panel-stats, .right-panel-stats {
+        flex-grow: 1;
+        flex-basis: 0%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .user-stats-activity {
+        font-size: 14px;
+    }
+
+
+    p.registered-users, p.logged-today {
+        font-size: 14px;
+    }
+
+}
+
+

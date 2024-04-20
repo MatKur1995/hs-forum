@@ -1,0 +1,109 @@
+.left-side-bar {
+    font-size: 12px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.left-panel-content {
+    margin-bottom: 40px;
+    background-color: #161616;
+}
+
+
+.row-title-container {
+    display: flex;
+    align-items: center;
+    background-image: url('../../../../public/assets/img/bgrow.png');
+    background-repeat: repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.thread-desc {
+    font-size: 9px;
+}
+
+.row-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.row-threads {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.row-threads img {
+    margin-right: 10px;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #505050;
+}
+
+.test:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.row-threads-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+}
+
+.new-thread {
+    color: #ffb800;
+    font-weight: 700;
+}
+
+.row-threads-right img {
+    max-width: 30px;
+}
+
+.middle-content-activity {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .middle-content-activity {
+        display: block;
+    }
+
+    .row-threads-right {
+        margin-left: 10px;
+    }
+
+    .test {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1400px) {
+    .left-side-bar {
+        font-size: 14px;
+    }
+
+    .thread-desc {
+        font-size: 12px;
+        color: #c0c0c0;
+        margin-top: 5px;
+    }
+
+    .row-title-container {
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+}
+

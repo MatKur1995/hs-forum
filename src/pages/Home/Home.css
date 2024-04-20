@@ -1,0 +1,18 @@
+.main-view {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+@media (min-width: 1400px) {
+    .homepage {
+        display: flex;
+    }
+
+    .leftSideBar {
+        flex: 0 0 80%; /* 70% szerokości kontenera */
+    }
+
+    .rightSideBar {
+        flex: 0 0 20%; /* 30% szerokości kontenera */
+    }
+}
