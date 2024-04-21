@@ -8,6 +8,11 @@
     margin: 20px 10px;
 }
 
+.post-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .post-answers {
     border: 1px solid #505050;
 }
@@ -49,4 +54,204 @@
     margin-bottom: 10px;
     font-size: 13px
 }
+
+.button-edit {
+    appearance: none;
+    background-color: #2ea44f;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.button-edit:focus:not(:focus-visible):not(.focus-visible), .button-delete:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+}
+
+.button-edit:hover {
+    background-color: #2c974b;
+}
+
+.button-edit:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-edit:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button-edit:active {
+    background-color: #298e46;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.button-delete {
+    appearance: none;
+    background-color: #c42929;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+.button-delete:hover {
+    background-color: #ef0505;
+}
+
+.button-delete:focus {
+    box-shadow: rgba(255, 0, 70, 0.4) 0 0 0 3px;
+    outline: none;
+}
+
+.button-delete:disabled {
+    background-color: rgba(255, 0, 70, 0.4);
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button-delete:active {
+    background-color: rgba(255, 0, 70, 0.4);
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.button-rep {
+    appearance: none;
+    background-color: #d5c83c;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+.button-rep:hover {
+    background-color: #ad9800;
+}
+
+.button-rep:focus {
+    box-shadow: #ad9800 0 0 0 3px;
+    outline: none;
+}
+
+.button-rep:disabled {
+    background-color: #ad9800;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+}
+
+.button-rep:active {
+    background-color: #ccb401;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.post-actions {
+    margin-right: auto;
+}
+
+.post-content, .post-answers {
+    min-height: 150px;
+}
+
+.author-rep, .author-posts, .author-rank {
+    min-width: 100px;
+}
+.post-answers {
+    height: 100%;
+}
+
+.post-navigation {
+    padding: 10px;
+}
+
+.link-navigation {
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    .post-content, .post-answers {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        padding: 20px 10px;
+
+    }
+    .post-author div {
+        margin-right: 15px;
+    }
+
+    .post-author {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+
+    .post-actions {
+        margin-top: 50px;
+    }
+
+}
+
+
+
+
 
