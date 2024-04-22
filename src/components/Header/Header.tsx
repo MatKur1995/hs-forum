@@ -2,23 +2,36 @@ import "./Header.css";
 import {GameServerList} from "./GameServerList/GameServerList";
 import {Nav} from "./Nav/Nav";
 import {useState} from "react";
-import {NavProps} from "../../types/nav/Nav.types";
+import {Login} from "../../pages/Login/Login";
+import {Register} from "../../pages/Register/Register";
 
 
 export const Header = () => {
 
-    const [isActive, setIsActive] = useState(false)
+    const [isActive, setIsActive] = useState(false);
+    const [isLogin, setIsLoginActive] = useState(false);
+    const [isRegister, setIsRegisterActive] = useState(false);
 
     const toggleClass = ():void => {
         setIsActive(!isActive);
     };
-    // NavProps
+
+    const toggleLogin = ():void => {
+        setIsLoginActive(!isLogin);
+    };
+
+    const toggleRegister = ():void => {
+        setIsRegisterActive(!isRegister);
+    };
+
     return (<header>
         <div onClick={toggleClass} className="hamburger-menu">
         <span></span>
         <span></span>
         <span></span>
     </div>
+            <Login isLogin={isLogin} toggleLogin={toggleLogin}/>
+            <Register isRegister={isRegister} toggleRegister={toggleRegister}/>
     <div className="header-container">
         <img src="../../assets/img/logo3.png" alt="test" className="header-logo"/>
             <div className="nav-desktop">
@@ -31,13 +44,13 @@ export const Header = () => {
                     <p className="header-paragraph"><a href="/">Zaloguj</a> się bądź <a href="/">zarejestruj</a> by uzyskać dostęp do panelu użytkownika na head-shot.pl</p>
                 </div>
                 <div className="header-panel">
-                    <div className="header-panel-login">
+                    <div onClick={toggleLogin} className="header-panel-login">
                         <img src="../../assets/img/log-icon.png" alt=""/>
-                            <a href="/">logowanie</a>
+                            <p>logowanie</p>
                     </div>
-                    <div className="header-panel-register">
+                    <div onClick={toggleRegister} className="header-panel-register">
                         <img src="../../assets/img/reg-icon.png" alt=""/>
-                            <a href="/">rejestracja</a>
+                            <p>rejestracja</p>
                     </div>
                 </div>
             </div>

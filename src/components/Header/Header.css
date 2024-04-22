@@ -84,8 +84,9 @@ header {
     max-width: 25px;
 }
 
-.header-panel div a {
+.header-panel div p {
     color: #fff;
+    cursor: pointer;
     font-weight: 700;
     margin-left: 5px;
     font-size: 13px;
